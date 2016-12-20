@@ -112,5 +112,29 @@ namespace FrmLogin.Implement
             }
             return dt;
         }
+
+        public DataSet SelectCalon()
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                {
+                    koneksi.Open();
+
+                    query = "SELECT nomor_calon as NOMOR, nama_calon as NAMA, partai_calon as PARTAI from tb_calon ";
+                    command = new SqlCommand(query, koneksi);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(ds, "tb_calon");
+
+                    koneksi.Close();
+                }
+            }
+            catch (SqlException se)
+            {
+                Console.WriteLine("ERROR" + se);
+            }
+
+            return ds;
+        }
     }
 }

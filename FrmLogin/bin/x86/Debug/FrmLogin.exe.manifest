@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FrmLogin.exe" size="10803712">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FrmLogin.exe" size="10805760">
       <assemblyIdentity name="FrmLogin" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7C8FXfj7iLAt63+5KxZ5d/sBWRaEsllMGhiWhc7JZvo=</dsig:DigestValue>
+        <dsig:DigestValue>+wJwYXU/Rb5ZzZXWb3+Mku7Po7cdsEZEuXtS8CmkeDg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

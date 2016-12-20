@@ -112,6 +112,5 @@ namespace FrmLogin.Implement
             return kodeBaru; 
         }
 
-        
     }
 }

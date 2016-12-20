@@ -36,7 +36,6 @@
             this.btnRekap = new System.Windows.Forms.Button();
             this.btnInput = new System.Windows.Forms.Button();
             this.btnCabut = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dgvSuara = new System.Windows.Forms.DataGridView();
             this.nomor_calon = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,20 +47,21 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuara)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // backgroundWorker1
@@ -81,9 +81,9 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel2.Controls.Add(this.btnClose, 1, 9);
             this.tableLayoutPanel2.Controls.Add(this.btnRekap, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.btnInput, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.btnCabut, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 1, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 109);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 11;
@@ -168,16 +168,6 @@
             this.btnCabut.Text = "Cabut suara [F3]";
             this.btnCabut.UseVisualStyleBackColor = false;
             this.btnCabut.Click += new System.EventHandler(this.btnCabut_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::FrmLogin.Properties.Resources.Layout_IMK_Menu;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(156, 59);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
             // 
             // panel4
             // 
@@ -313,26 +303,15 @@
             this.panel1.Size = new System.Drawing.Size(204, 161);
             this.panel1.TabIndex = 5;
             // 
-            // pictureBox3
+            // panel2
             // 
-            this.pictureBox3.Image = global::FrmLogin.Properties.Resources.Layout_IMK_Jam;
-            this.pictureBox3.Location = new System.Drawing.Point(7, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(162, 52);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("PF Encore Sans Pro Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.Color.DimGray;
-            this.lblDate.Location = new System.Drawing.Point(9, 3);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(166, 31);
-            this.lblDate.TabIndex = 1;
-            this.lblDate.Text = "dd-mm-yyyy";
+            this.panel2.BackColor = System.Drawing.Color.PaleGreen;
+            this.panel2.Controls.Add(this.lblTime);
+            this.panel2.Controls.Add(this.lblDate);
+            this.panel2.Location = new System.Drawing.Point(5, 68);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(193, 86);
+            this.panel2.TabIndex = 3;
             // 
             // lblTime
             // 
@@ -345,15 +324,37 @@
             this.lblTime.TabIndex = 0;
             this.lblTime.Text = "00:00:00";
             // 
-            // panel2
+            // lblDate
             // 
-            this.panel2.BackColor = System.Drawing.Color.PaleGreen;
-            this.panel2.Controls.Add(this.lblTime);
-            this.panel2.Controls.Add(this.lblDate);
-            this.panel2.Location = new System.Drawing.Point(5, 68);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 86);
-            this.panel2.TabIndex = 3;
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("PF Encore Sans Pro Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.DimGray;
+            this.lblDate.Location = new System.Drawing.Point(9, 3);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(166, 31);
+            this.lblDate.TabIndex = 1;
+            this.lblDate.Text = "dd-mm-yyyy";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::FrmLogin.Properties.Resources.Layout_IMK_Jam;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(162, 47);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox2.Image = global::FrmLogin.Properties.Resources.Layout_IMK_Menu;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(133, 53);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
             // 
             // Form2
             // 
@@ -372,7 +373,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form2_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuara)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -381,9 +381,10 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -408,8 +409,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

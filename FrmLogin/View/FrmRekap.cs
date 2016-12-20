@@ -20,15 +20,23 @@ namespace FrmLogin.View
             suaraDao = Factory.FactLogin.GetInterfaceSuara();
             InitializeComponent();
             TampilDataRekap();
+            TampilDataCalon();
         }
         public void TampilDataRekap()
         {
             data = new DataSet();
             data = suaraDao.rekapSuara();
             dgvRekap.DataSource = data.Tables["tb_rekap"];
-            /*dgvRekap.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvRekap.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;*/
             this.dgvRekap.Sort(this.dgvRekap.Columns["waktu_suara"], ListSortDirection.Ascending);
+        }
+        public void TampilDataCalon()
+        {
+            data = new DataSet();
+            data = suaraDao.SelectCalon();
+            dgvCalon.DataSource = data;
+            dgvCalon.DataMember = "tb_calon";
+            dgvCalon.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCalon.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -44,7 +52,7 @@ namespace FrmLogin.View
             printer.HeaderCellAlignment = StringAlignment.Near;
             printer.Footer = "KPUD Yogyakarta";
             printer.FooterSpacing = 15;
-            printer.printDocument.DefaultPageSettings.Landscape = true;
+            printer.printDocument.DefaultPageSettings.Landscape = false;
             printer.PrintPreviewDataGridView(dgvRekap);
             printer.PrintDataGridView(dgvRekap);
             

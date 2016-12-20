@@ -51,7 +51,7 @@
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tableLayoutPanel6.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.tableLayoutPanel6.BackColor = System.Drawing.Color.DarkCyan;
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));

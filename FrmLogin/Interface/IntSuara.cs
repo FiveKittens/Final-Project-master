@@ -13,6 +13,7 @@ namespace FrmLogin.Interface
 
         Boolean updateSuara(Entity.EntSuara e);
         DataSet rekapSuara();
+        DataSet SelectCalon();
         DataSet SelectSuara();
     }
 }

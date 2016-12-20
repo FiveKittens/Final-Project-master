@@ -88,7 +88,14 @@ namespace FrmLogin
             dgvSuara.DataSource = data;
             dgvSuara.DataMember = "tb_suara";
             dgvSuara.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvSuara.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;           
+            dgvSuara.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            SelectDataGrid();           
+        }
+        public void SelectDataGrid()
+        {
+            int nRowIndex = dgvSuara.Rows.Count - 1;
+
+            dgvSuara.CurrentCell = dgvSuara.Rows[nRowIndex].Cells[0];
         }
         public Decimal TotalSuara()
         {
