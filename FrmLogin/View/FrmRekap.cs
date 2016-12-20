@@ -14,13 +14,15 @@ namespace FrmLogin.View
     public partial class FrmRekap : Form
     {
         private DataSet data;
+        private Timer time;
         private Interface.IntSuara suaraDao;
         public FrmRekap()
         {
+            time = new Timer();
             suaraDao = Factory.FactLogin.GetInterfaceSuara();
             InitializeComponent();
             TampilDataRekap();
-            TampilDataCalon();
+            JamAsik();
         }
         public void TampilDataRekap()
         {
@@ -29,16 +31,49 @@ namespace FrmLogin.View
             dgvRekap.DataSource = data.Tables["tb_rekap"];
             this.dgvRekap.Sort(this.dgvRekap.Columns["waktu_suara"], ListSortDirection.Ascending);
         }
-        public void TampilDataCalon()
+        private void Time_Tick(object sender, EventArgs e)
         {
-            data = new DataSet();
-            data = suaraDao.SelectCalon();
-            dgvCalon.DataSource = data;
-            dgvCalon.DataMember = "tb_calon";
-            dgvCalon.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvCalon.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
-        }
+            int hh = DateTime.Now.Hour;
+            int mm = DateTime.Now.Minute;
+            int ss = DateTime.Now.Second;
 
+            string jam = "";
+
+            if (hh < 10)
+            {
+                jam += "0" + hh;
+            }
+            else
+            {
+                jam += hh;
+            }
+            jam += ":";
+            if (mm < 10)
+            {
+                jam += "0" + mm;
+            }
+            else
+            {
+                jam += mm;
+            }
+            jam += ":";
+            if (ss < 10)
+            {
+                jam += "0" + ss;
+            }
+            else
+            {
+                jam += ss;
+            }
+            lblJam.Text = jam;
+            lblDate.Text = DateTime.Now.ToString("dd-MM-yyyy");
+        }
+        private void JamAsik()
+        {
+            time.Interval = 1000;
+            time.Tick += new EventHandler(this.Time_Tick);
+            time.Start();
+        }
         private void btnPrint_Click(object sender, EventArgs e)
         {
             DGVPrinter printer = new DGVPrinter();
@@ -52,7 +87,7 @@ namespace FrmLogin.View
             printer.HeaderCellAlignment = StringAlignment.Near;
             printer.Footer = "KPUD Yogyakarta";
             printer.FooterSpacing = 15;
-            printer.printDocument.DefaultPageSettings.Landscape = false;
+            printer.printDocument.DefaultPageSettings.Landscape = true;
             printer.PrintPreviewDataGridView(dgvRekap);
             printer.PrintDataGridView(dgvRekap);
             

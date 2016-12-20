@@ -16,12 +16,14 @@ namespace FrmLogin.View
         private string keterangan;
         private string lastDir;
         private Boolean hasil;
+        private Entity.EntLogin login;
         private Interface.IntCalon clnDao;
         private Entity.EntCalon cln;
         
         public FrmInputCalon()
         {
             cln = new Entity.EntCalon();
+            login = new Entity.EntLogin();
             clnDao = Factory.FactLogin.GetInterfaceCalon();
             InitializeComponent();
             AturText(false);
@@ -50,6 +52,8 @@ namespace FrmLogin.View
         }
         private void Form3_Load(object sender, EventArgs e)
         {
+            label7.Text = login.getID();
+            label5.Text = login.getUser();
             keterangan = "INSERT";
             txtNomor.Text = clnDao.nomorBaru();
             txtNama.Text = "";

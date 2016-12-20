@@ -19,6 +19,7 @@ namespace FrmLogin.View
             loading = new View.FrmLoading();
             login = new Entity.EntLogin();
             InitializeComponent();
+            rtBox.ReadOnly = true;
         }
 
         public void AturButton(Boolean status)
