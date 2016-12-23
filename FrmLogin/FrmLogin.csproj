@@ -288,6 +288,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GitHub-Mark-120px-plus.ico" />
+    <None Include="Resources\Layout IMKRekap.png" />
+    <None Include="Resources\Layout Penghitung.png" />
+    <None Include="Resources\Layout IMKinput.png" />
     <None Include="Resources\Layout IMK-Jam.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

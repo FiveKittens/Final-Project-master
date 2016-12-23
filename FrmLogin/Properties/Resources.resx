@@ -118,11 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Layout IMK-Jam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Layout IMK-Jam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Layout Penghitung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Layout Penghitung.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PASSWORD2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PASSWORD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Layout IMK-Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Layout IMK-Menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="businessman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\businessman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Layout IMK-Dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Layout IMK-Dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,11 +154,11 @@
   <data name="PASSWORD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PASSWORD1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Layout IMKinput" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Layout IMKinput.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Layout IMKxzx" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Layout IMKxzx1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ADMIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ADMIN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PASSWORD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PASSWORD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,10 +166,10 @@
   <data name="PASSWORD3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PASSWORD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="businessman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\businessman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ADMIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ADMIN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Layout IMK-Jam" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Layout IMK-Jam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Layout IMKRekap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Layout IMKRekap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

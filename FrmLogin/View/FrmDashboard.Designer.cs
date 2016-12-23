@@ -57,14 +57,14 @@
             // 
             // btnCount
             // 
-            this.btnCount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCount.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCount.BackColor = System.Drawing.Color.PaleGreen;
             this.btnCount.FlatAppearance.BorderSize = 0;
             this.btnCount.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnCount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnCount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCount.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCount.Location = new System.Drawing.Point(0, 104);
+            this.btnCount.Location = new System.Drawing.Point(0, 84);
             this.btnCount.Name = "btnCount";
             this.btnCount.Size = new System.Drawing.Size(444, 43);
             this.btnCount.TabIndex = 1;
@@ -74,14 +74,14 @@
             // 
             // btnInput
             // 
-            this.btnInput.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnInput.BackColor = System.Drawing.Color.PaleGreen;
             this.btnInput.FlatAppearance.BorderSize = 0;
             this.btnInput.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnInput.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInput.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInput.Location = new System.Drawing.Point(0, 153);
+            this.btnInput.Location = new System.Drawing.Point(0, 127);
             this.btnInput.Name = "btnInput";
             this.btnInput.Size = new System.Drawing.Size(444, 43);
             this.btnInput.TabIndex = 2;
@@ -91,9 +91,9 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.Image = global::FrmLogin.Properties.Resources.Layout_IMK_Menu;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 30);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 16);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(165, 53);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,14 +102,14 @@
             // 
             // btnRekap
             // 
-            this.btnRekap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRekap.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRekap.BackColor = System.Drawing.Color.PaleGreen;
             this.btnRekap.FlatAppearance.BorderSize = 0;
             this.btnRekap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnRekap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnRekap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRekap.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRekap.Location = new System.Drawing.Point(0, 201);
+            this.btnRekap.Location = new System.Drawing.Point(0, 170);
             this.btnRekap.Name = "btnRekap";
             this.btnRekap.Size = new System.Drawing.Size(444, 43);
             this.btnRekap.TabIndex = 5;
@@ -119,14 +119,14 @@
             // 
             // btnOut
             // 
-            this.btnOut.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnOut.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnOut.BackColor = System.Drawing.Color.PaleGreen;
             this.btnOut.FlatAppearance.BorderSize = 0;
             this.btnOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOut.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOut.Location = new System.Drawing.Point(0, 298);
+            this.btnOut.Location = new System.Drawing.Point(0, 304);
             this.btnOut.Name = "btnOut";
             this.btnOut.Size = new System.Drawing.Size(444, 43);
             this.btnOut.TabIndex = 6;
@@ -222,7 +222,7 @@
             this.rtBox.Font = new System.Drawing.Font("PF Encore Sans Pro Medium", 12F, System.Drawing.FontStyle.Bold);
             this.rtBox.Location = new System.Drawing.Point(467, 3);
             this.rtBox.Name = "rtBox";
-            this.rtBox.Size = new System.Drawing.Size(384, 510);
+            this.rtBox.Size = new System.Drawing.Size(384, 506);
             this.rtBox.TabIndex = 6;
             this.rtBox.Text = resources.GetString("rtBox.Text");
             // 
@@ -236,7 +236,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(229, 146);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(994, 705);
+            this.panel1.Size = new System.Drawing.Size(994, 701);
             this.panel1.TabIndex = 7;
             // 
             // panel2
@@ -250,7 +250,7 @@
             this.panel2.Controls.Add(this.rtBox);
             this.panel2.Location = new System.Drawing.Point(65, 134);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(854, 516);
+            this.panel2.Size = new System.Drawing.Size(854, 512);
             this.panel2.TabIndex = 6;
             // 
             // panel3
@@ -276,9 +276,9 @@
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.btnInput);
             this.panel4.Controls.Add(this.btnCount);
-            this.panel4.Location = new System.Drawing.Point(0, 159);
+            this.panel4.Location = new System.Drawing.Point(0, 158);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(447, 357);
+            this.panel4.Size = new System.Drawing.Size(447, 354);
             this.panel4.TabIndex = 6;
             // 
             // FrmDashboard
@@ -287,7 +287,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FrmLogin.Properties.Resources.Layout_IMK;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1426, 929);
+            this.ClientSize = new System.Drawing.Size(1426, 925);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

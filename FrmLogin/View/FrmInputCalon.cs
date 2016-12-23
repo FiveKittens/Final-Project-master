@@ -33,7 +33,7 @@ namespace FrmLogin.View
         public void AturText(Boolean status)
         {
             txtNama.Enabled = status;
-            txtNomor.Enabled = status;
+            txtNomor.Enabled =! status;
             txtPartai.Enabled = status;
         }
 
@@ -47,8 +47,8 @@ namespace FrmLogin.View
         private void btnKeluar_Click(object sender, EventArgs e)
         {
             View.FrmDashboard f4 = new View.FrmDashboard();
-            f4.Show();
-            this.Hide();
+            f4.ShowDialog();
+            this.Dispose();
         }
         private void Form3_Load(object sender, EventArgs e)
         {
@@ -87,8 +87,11 @@ namespace FrmLogin.View
                 MessageBox.Show("Penyimpanan data gagal");
             }
 
-            AturText(false);
+            AturText(true);
             AturButton(true);
+            txtNama.Clear();
+            txtPartai.Clear();
+            txtNama.Focus();
         }
         public byte[] ImageToByteArray(Image img)
         {
@@ -105,7 +108,7 @@ namespace FrmLogin.View
             open.Filter = "Image Files(*.png; *.jpg; *.bmp)|*.png; *.jpg; *.bmp";
             if (lastDir == null)
             {
-                open.InitialDirectory = @"C:\";
+                open.InitialDirectory = @"F:\Data Kuliah\Materi PL\Project\FrmLogin\FrmLogin\bin\Debug\SrcImg   ";
             }
             else
             {
@@ -134,7 +137,6 @@ namespace FrmLogin.View
                 }
             }
         }
-
-        
+       
     }
 }

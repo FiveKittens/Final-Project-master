@@ -56,8 +56,6 @@ namespace FrmLogin
                 }
                 else
                 {
-                    Form2 f2 = new Form2();
-                    View.FrmInputCalon f3 = new View.FrmInputCalon();
                     View.FrmDashboard f4 = new View.FrmDashboard();
                     f4.Show();
                     this.Hide();

@@ -109,16 +109,17 @@ namespace FrmLogin.View
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            FrmDashboard f4 = new FrmDashboard();
-            f4.Show();
-            this.Hide();
+            Form2 f2 = new Form2();
+            f2.Show();
+            this.Dispose();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FrmLogin f1 = new FrmLogin();
-            f1.Show();
-            this.Close();
+            View.FrmDashboard f4 = new View.FrmDashboard();
+            f4.Show();
+            this.Dispose();
         }
+        
     }
 }

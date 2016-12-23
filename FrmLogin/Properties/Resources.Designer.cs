@@ -143,6 +143,26 @@ namespace FrmLogin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Layout_IMKinput {
+            get {
+                object obj = ResourceManager.GetObject("Layout IMKinput", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Layout_IMKRekap {
+            get {
+                object obj = ResourceManager.GetObject("Layout IMKRekap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Layout_IMKxx {
             get {
                 object obj = ResourceManager.GetObject("Layout IMKxx", resourceCulture);
@@ -156,6 +176,16 @@ namespace FrmLogin.Properties {
         internal static System.Drawing.Bitmap Layout_IMKxzx {
             get {
                 object obj = ResourceManager.GetObject("Layout IMKxzx", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Layout_Penghitung {
+            get {
+                object obj = ResourceManager.GetObject("Layout Penghitung", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

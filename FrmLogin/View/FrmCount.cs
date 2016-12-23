@@ -174,7 +174,7 @@ namespace FrmLogin
         {
             View.FrmDashboard f4 = new View.FrmDashboard();
             f4.Show();
-            this.Hide();
+            this.Dispose();
         }
         private void btnRekap_Click(object sender, EventArgs e)
         {
@@ -188,6 +188,6 @@ namespace FrmLogin
             f8.ShowDialog(this);
             TampilDataCalon();;
         }
-        
+       
     }
 }

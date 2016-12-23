@@ -43,13 +43,13 @@
             this.suara_masuk = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.waktu_suara = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -57,9 +57,9 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuara)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -75,7 +75,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnClose.BackColor = System.Drawing.Color.PaleGreen;
             this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnClose.FlatAppearance.BorderSize = 0;
@@ -83,7 +83,7 @@
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(0, 298);
+            this.btnClose.Location = new System.Drawing.Point(0, 303);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(444, 43);
             this.btnClose.TabIndex = 22;
@@ -93,7 +93,7 @@
             // 
             // btnRekap
             // 
-            this.btnRekap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRekap.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRekap.BackColor = System.Drawing.Color.PaleGreen;
             this.btnRekap.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnRekap.FlatAppearance.BorderSize = 0;
@@ -101,7 +101,7 @@
             this.btnRekap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnRekap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRekap.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRekap.Location = new System.Drawing.Point(0, 201);
+            this.btnRekap.Location = new System.Drawing.Point(0, 166);
             this.btnRekap.Name = "btnRekap";
             this.btnRekap.Size = new System.Drawing.Size(444, 39);
             this.btnRekap.TabIndex = 16;
@@ -111,7 +111,7 @@
             // 
             // btnInput
             // 
-            this.btnInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnInput.BackColor = System.Drawing.Color.PaleGreen;
             this.btnInput.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnInput.FlatAppearance.BorderSize = 0;
@@ -119,7 +119,7 @@
             this.btnInput.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInput.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInput.Location = new System.Drawing.Point(0, 104);
+            this.btnInput.Location = new System.Drawing.Point(0, 84);
             this.btnInput.Name = "btnInput";
             this.btnInput.Size = new System.Drawing.Size(444, 43);
             this.btnInput.TabIndex = 4;
@@ -129,7 +129,7 @@
             // 
             // btnCabut
             // 
-            this.btnCabut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCabut.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCabut.BackColor = System.Drawing.Color.PaleGreen;
             this.btnCabut.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCabut.FlatAppearance.BorderSize = 0;
@@ -137,7 +137,7 @@
             this.btnCabut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnCabut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCabut.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCabut.Location = new System.Drawing.Point(0, 153);
+            this.btnCabut.Location = new System.Drawing.Point(0, 127);
             this.btnCabut.Name = "btnCabut";
             this.btnCabut.Size = new System.Drawing.Size(444, 39);
             this.btnCabut.TabIndex = 10;
@@ -147,9 +147,9 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = global::FrmLogin.Properties.Resources.Layout_IMK_Menu;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(165, 53);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -232,7 +232,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.panel3, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblTotal, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(11, 369);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -241,6 +241,19 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.64886F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(379, 131);
             this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("PF Encore Sans Pro", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTotal.Location = new System.Drawing.Point(3, 54);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(373, 67);
+            this.lblTotal.TabIndex = 0;
+            this.lblTotal.Text = "0";
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -254,26 +267,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Total Suara";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.lblTotal);
-            this.panel3.Location = new System.Drawing.Point(3, 48);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(373, 80);
-            this.panel3.TabIndex = 1;
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("PF Encore Sans Pro", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(164, 1);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(65, 67);
-            this.lblTotal.TabIndex = 0;
-            this.lblTotal.Text = "0";
-            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTime
             // 
@@ -313,11 +306,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.DimGray;
+            this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Location = new System.Drawing.Point(229, 146);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(994, 705);
             this.panel5.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::FrmLogin.Properties.Resources.Layout_Penghitung;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(348, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // panel6
             // 
@@ -342,9 +347,9 @@
             this.panel8.Controls.Add(this.btnRekap);
             this.panel8.Controls.Add(this.btnInput);
             this.panel8.Controls.Add(this.btnCabut);
-            this.panel8.Location = new System.Drawing.Point(0, 159);
+            this.panel8.Location = new System.Drawing.Point(0, 156);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(447, 357);
+            this.panel8.Size = new System.Drawing.Size(447, 360);
             this.panel8.TabIndex = 1;
             // 
             // panel7
@@ -376,10 +381,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuara)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -401,7 +405,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn waktu_suara;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblDate;
@@ -411,5 +414,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

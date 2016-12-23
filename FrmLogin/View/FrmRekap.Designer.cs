@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRekap));
             this.button4 = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
@@ -41,12 +41,13 @@
             this.PrintDataGridView = new System.Windows.Forms.PrintPreviewDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblDate = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lblJam = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.nama_calon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomor_calon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.suara_masuk = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,39 +55,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRekap)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button4.BackColor = System.Drawing.Color.PaleGreen;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 298);
+            this.button4.Location = new System.Drawing.Point(0, 256);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(444, 43);
             this.button4.TabIndex = 3;
-            this.button4.Text = "SELESAI";
+            this.button4.Text = "DASHBoard";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnPrint
             // 
-            this.btnPrint.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPrint.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnPrint.BackColor = System.Drawing.Color.PaleGreen;
             this.btnPrint.FlatAppearance.BorderSize = 0;
             this.btnPrint.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnPrint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrint.Font = new System.Drawing.Font("Bebas Neue Regular", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.Location = new System.Drawing.Point(0, 250);
+            this.btnPrint.Location = new System.Drawing.Point(0, 213);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(444, 43);
             this.btnPrint.TabIndex = 4;
@@ -96,14 +98,14 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnDelete.BackColor = System.Drawing.Color.PaleGreen;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(0, 201);
+            this.btnDelete.Location = new System.Drawing.Point(0, 170);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(444, 43);
             this.btnDelete.TabIndex = 2;
@@ -113,14 +115,14 @@
             // 
             // btnInput
             // 
-            this.btnInput.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnInput.BackColor = System.Drawing.Color.PaleGreen;
             this.btnInput.FlatAppearance.BorderSize = 0;
             this.btnInput.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnInput.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInput.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInput.Location = new System.Drawing.Point(0, 153);
+            this.btnInput.Location = new System.Drawing.Point(0, 127);
             this.btnInput.Name = "btnInput";
             this.btnInput.Size = new System.Drawing.Size(444, 43);
             this.btnInput.TabIndex = 1;
@@ -130,26 +132,26 @@
             // 
             // btnHome
             // 
-            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnHome.BackColor = System.Drawing.Color.PaleGreen;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Location = new System.Drawing.Point(0, 104);
+            this.btnHome.Location = new System.Drawing.Point(0, 84);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(444, 43);
             this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "HOME";
+            this.btnHome.Text = "Back";
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = global::FrmLogin.Properties.Resources.Layout_IMK_Menu;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 30);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(165, 53);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -167,28 +169,28 @@
             this.dgvRekap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRekap.BackgroundColor = System.Drawing.Color.DarkSlateGray;
             this.dgvRekap.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRekap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRekap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dgvRekap.ColumnHeadersHeight = 42;
             this.dgvRekap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nama_calon,
             this.nomor_calon,
             this.suara_masuk,
             this.waktu_suara});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRekap.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRekap.DefaultCellStyle = dataGridViewCellStyle26;
             this.dgvRekap.Location = new System.Drawing.Point(447, 0);
             this.dgvRekap.Name = "dgvRekap";
             this.dgvRekap.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -201,7 +203,7 @@
             // 
             this.PrintDataGridView.AutoScrollMargin = new System.Drawing.Size(0, 0);
             this.PrintDataGridView.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.PrintDataGridView.ClientSize = new System.Drawing.Size(400, 300);
+            this.PrintDataGridView.ClientSize = new System.Drawing.Size(400, 301);
             this.PrintDataGridView.Enabled = true;
             this.PrintDataGridView.Icon = ((System.Drawing.Icon)(resources.GetObject("PrintDataGridView.Icon")));
             this.PrintDataGridView.Name = "PrintDataGridView";
@@ -213,11 +215,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(229, 146);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(994, 705);
             this.panel1.TabIndex = 6;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::FrmLogin.Properties.Resources.Layout_IMKRekap;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 25);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(348, 71);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
             // 
             // panel2
             // 
@@ -232,17 +246,6 @@
             this.panel2.Size = new System.Drawing.Size(854, 516);
             this.panel2.TabIndex = 0;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightGreen;
-            this.panel3.Controls.Add(this.lblJam);
-            this.panel3.Controls.Add(this.lblDate);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(447, 157);
-            this.panel3.TabIndex = 0;
-            // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -254,31 +257,21 @@
             this.panel4.Controls.Add(this.btnHome);
             this.panel4.Controls.Add(this.btnDelete);
             this.panel4.Controls.Add(this.btnInput);
-            this.panel4.Location = new System.Drawing.Point(0, 159);
+            this.panel4.Location = new System.Drawing.Point(0, 156);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(447, 357);
+            this.panel4.Size = new System.Drawing.Size(447, 360);
             this.panel4.TabIndex = 1;
             // 
-            // pictureBox1
+            // panel3
             // 
-            this.pictureBox1.Image = global::FrmLogin.Properties.Resources.Layout_IMK_Jam;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("PF Encore Sans Pro", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.Color.DimGray;
-            this.lblDate.Location = new System.Drawing.Point(134, 80);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(163, 30);
-            this.lblDate.TabIndex = 1;
-            this.lblDate.Text = "dd-mm-yyyy";
+            this.panel3.BackColor = System.Drawing.Color.LightGreen;
+            this.panel3.Controls.Add(this.lblJam);
+            this.panel3.Controls.Add(this.lblDate);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(447, 157);
+            this.panel3.TabIndex = 0;
             // 
             // lblJam
             // 
@@ -291,31 +284,52 @@
             this.lblJam.TabIndex = 2;
             this.lblJam.Text = "00:00:00";
             // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("PF Encore Sans Pro", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.DimGray;
+            this.lblDate.Location = new System.Drawing.Point(134, 80);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(170, 31);
+            this.lblDate.TabIndex = 1;
+            this.lblDate.Text = "dd-mm-yyyy";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FrmLogin.Properties.Resources.Layout_IMK_Jam;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(165, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // nama_calon
             // 
             this.nama_calon.DataPropertyName = "nama_calon";
-            this.nama_calon.FillWeight = 169.474F;
+            this.nama_calon.FillWeight = 157.5152F;
             this.nama_calon.HeaderText = "NAMA CALON TERPILIH";
             this.nama_calon.Name = "nama_calon";
             // 
             // nomor_calon
             // 
             this.nomor_calon.DataPropertyName = "nomor_calon";
-            this.nomor_calon.FillWeight = 30.59523F;
+            this.nomor_calon.FillWeight = 32.16078F;
             this.nomor_calon.HeaderText = "NOMOR CALON";
             this.nomor_calon.Name = "nomor_calon";
             // 
             // suara_masuk
             // 
             this.suara_masuk.DataPropertyName = "suara_masuk";
-            this.suara_masuk.FillWeight = 30.45685F;
+            this.suara_masuk.FillWeight = 30.45686F;
             this.suara_masuk.HeaderText = "JUMLAH SUARA";
             this.suara_masuk.Name = "suara_masuk";
             // 
             // waktu_suara
             // 
             this.waktu_suara.DataPropertyName = "waktu_suara";
-            this.waktu_suara.FillWeight = 169.474F;
+            this.waktu_suara.FillWeight = 179.8673F;
             this.waktu_suara.HeaderText = "WAKTU SUARA MASUK/KELUAR";
             this.waktu_suara.Name = "waktu_suara";
             // 
@@ -334,10 +348,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRekap)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -360,6 +375,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblJam;
         private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.DataGridViewTextBoxColumn nama_calon;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomor_calon;
         private System.Windows.Forms.DataGridViewTextBoxColumn suara_masuk;

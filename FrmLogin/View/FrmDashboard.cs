@@ -101,22 +101,22 @@ namespace FrmLogin.View
         private void btnCount_Click(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();
-            f2.Show();
+            f2.ShowDialog();
             this.Hide();
         }
 
         private void btnInput_Click(object sender, EventArgs e)
         {
             FrmInputCalon f3 = new FrmInputCalon();
-            f3.Show();
+            f3.ShowDialog();
             this.Hide();
         }
 
         private void btnOut_Click(object sender, EventArgs e)
         {
             FrmLogin f1 = new FrmLogin();
-            f1.Show();
-            this.Close();
+            f1.ShowDialog();
+            this.Hide();
         }
 
         private void btnRekap_Click(object sender, EventArgs e)
@@ -125,5 +125,6 @@ namespace FrmLogin.View
             f7.ShowDialog();
             this.Hide();
         }
+       
     }
 }

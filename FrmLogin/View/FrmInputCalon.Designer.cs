@@ -30,10 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInputCalon));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.btnDefault = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNomor = new System.Windows.Forms.TextBox();
@@ -41,33 +43,34 @@
             this.txtNama = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPartai = new System.Windows.Forms.TextBox();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.btnDefault = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnKeluar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.DarkCyan;
             this.panel2.Controls.Add(this.btnSubmit);
@@ -79,6 +82,24 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(407, 516);
             this.panel2.TabIndex = 0;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmit.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnSubmit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.Location = new System.Drawing.Point(250, 456);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(125, 49);
+            this.btnSubmit.TabIndex = 2;
+            this.btnSubmit.Text = "submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -125,6 +146,21 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // btnDefault
+            // 
+            this.btnDefault.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnDefault.FlatAppearance.BorderSize = 0;
+            this.btnDefault.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnDefault.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDefault.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDefault.Location = new System.Drawing.Point(35, 457);
+            this.btnDefault.Name = "btnDefault";
+            this.btnDefault.Size = new System.Drawing.Size(125, 47);
+            this.btnDefault.TabIndex = 3;
+            this.btnDefault.Text = "default";
+            this.btnDefault.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel2
             // 
@@ -217,39 +253,6 @@
             this.txtPartai.Size = new System.Drawing.Size(228, 31);
             this.txtPartai.TabIndex = 5;
             // 
-            // btnSubmit
-            // 
-            this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSubmit.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnSubmit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSubmit.FlatAppearance.BorderSize = 0;
-            this.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(250, 456);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(125, 49);
-            this.btnSubmit.TabIndex = 2;
-            this.btnSubmit.Text = "submit";
-            this.btnSubmit.UseVisualStyleBackColor = false;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            // 
-            // btnDefault
-            // 
-            this.btnDefault.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnDefault.FlatAppearance.BorderSize = 0;
-            this.btnDefault.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnDefault.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDefault.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDefault.Location = new System.Drawing.Point(35, 457);
-            this.btnDefault.Name = "btnDefault";
-            this.btnDefault.Size = new System.Drawing.Size(125, 47);
-            this.btnDefault.TabIndex = 3;
-            this.btnDefault.Text = "default";
-            this.btnDefault.UseVisualStyleBackColor = false;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -260,11 +263,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(229, 146);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(994, 705);
             this.panel1.TabIndex = 3;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::FrmLogin.Properties.Resources.Layout_IMKinput;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 25);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(348, 71);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
             // 
             // panel3
             // 
@@ -279,6 +294,34 @@
             this.panel3.Size = new System.Drawing.Size(854, 516);
             this.panel3.TabIndex = 0;
             // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel5.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.panel5.Controls.Add(this.btnKeluar);
+            this.panel5.Location = new System.Drawing.Point(0, 159);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(447, 357);
+            this.panel5.TabIndex = 1;
+            // 
+            // btnKeluar
+            // 
+            this.btnKeluar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnKeluar.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnKeluar.FlatAppearance.BorderSize = 0;
+            this.btnKeluar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnKeluar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnKeluar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKeluar.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKeluar.Location = new System.Drawing.Point(0, 303);
+            this.btnKeluar.Name = "btnKeluar";
+            this.btnKeluar.Size = new System.Drawing.Size(444, 43);
+            this.btnKeluar.TabIndex = 1;
+            this.btnKeluar.Text = "cancel";
+            this.btnKeluar.UseVisualStyleBackColor = false;
+            this.btnKeluar.Click += new System.EventHandler(this.btnKeluar_Click);
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGreen;
@@ -291,44 +334,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(447, 159);
             this.panel4.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.panel5.Controls.Add(this.btnKeluar);
-            this.panel5.Location = new System.Drawing.Point(0, 159);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(447, 357);
-            this.panel5.TabIndex = 1;
-            // 
-            // btnKeluar
-            // 
-            this.btnKeluar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnKeluar.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnKeluar.FlatAppearance.BorderSize = 0;
-            this.btnKeluar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnKeluar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnKeluar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKeluar.Font = new System.Drawing.Font("Bebas Neue Regular", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKeluar.Location = new System.Drawing.Point(0, 298);
-            this.btnKeluar.Name = "btnKeluar";
-            this.btnKeluar.Size = new System.Drawing.Size(444, 43);
-            this.btnKeluar.TabIndex = 1;
-            this.btnKeluar.Text = "cancel";
-            this.btnKeluar.UseVisualStyleBackColor = false;
-            this.btnKeluar.Click += new System.EventHandler(this.btnKeluar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::FrmLogin.Properties.Resources.user__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 132);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -378,6 +383,18 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "label7";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::FrmLogin.Properties.Resources.user__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(133, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmInputCalon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -398,10 +415,11 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -433,5 +451,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
